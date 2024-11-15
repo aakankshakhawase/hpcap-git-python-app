@@ -21,4 +21,4 @@ jobs:
       run: |
           docker build . --file Dockerfile --tag my-image-name:$(date +%s)
           docker login -u $USER -p $PASS
-          docker push my-image-name:$(date +%s)
+          docker push my-image-name:$(date +%s) 
