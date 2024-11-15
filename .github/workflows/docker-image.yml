@@ -21,6 +21,6 @@ jobs:
       run: |
           echo $USER
           echo $PASS
-          docker build . --file Dockerfile --tag aakankshakhawase/github:$(date +%s)
+          docker build . --file Dockerfile --tag aakankshakhawase/github:hpcap
           docker login -u $USER -p $PASS
-          docker push aakankshakhawase/github:$(date +%s) 
+          docker push aakankshakhawase/github:hpcap
